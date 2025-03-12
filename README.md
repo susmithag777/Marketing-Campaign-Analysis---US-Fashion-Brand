@@ -25,24 +25,24 @@ A comprehensive Power BI report that:
 The following metrics were identified as essential Key Performance Indicators (KPIs) to provide the business user with insights into the effectiveness of each campaign, and Identify opportunities for optimization:
 
 Provided KPIs (Within the dataset)
-Impressions – Daily impressions (times ad was shown to a viewer) for each ad <br>
-CTR (%) - Daily average click-through rate for each ad <br>
-Clicks - Daily clicks for each ad <br>
-Daily Average CPC - Daily average cost-per-click for each ad <br>
-Spend, GBP - Total daily amount of advertising spending for each ad, in Great Britain Pounds(GBP)<br>
-Conversions - Total daily purchases attributed to a specific ad<br>
-Total Conversion Value, GBP - Total amount received from purchases attributed to a specific ad (Revenue)<br>
-Likes - Total daily likes (or other reactions) per ad<br>
-Shares - Total daily shares per ad (For the simplicities sake, each Pin on Pinterest was counted as a share)<br>
-Comments - Total daily comments per ad <br>
+1. Impressions – Daily impressions (times ad was shown to a viewer) for each ad 
+2. CTR (%) - Daily average click-through rate for each ad 
+3. Clicks - Daily clicks for each ad 
+4. Daily Average CPC - Daily average cost-per-click for each ad 
+5. Spend, GBP - Total daily amount of advertising spending for each ad, in Great Britain Pounds(GBP)
+6. Conversions - Total daily purchases attributed to a specific ad
+7. Total Conversion Value, GBP - Total amount received from purchases attributed to a specific ad (Revenue)
+8. Likes - Total daily likes (or other reactions) per ad
+9. Shares - Total daily shares per ad (For the simplicities sake, each Pin on Pinterest was counted as a share)
+10. Comments - Total daily comments per ad 
 
 Additional(computed) KPIs.
-Total Engagement - What is the overall level of user interaction or engagement with our Ads across different metrics (likes, shares, and comments)?
-Conversion rate (%) - What percentage of ad viewers are converting into Paying customers?
-Cost per Acquisition - How much does it cost to acquire a single customer?
-Return on Ad-spend (ROAS) - How much revenue is generated for every dollar spent on advertising?
-Return on Investment (ROI) (%) - How much profit or loss is generated from our investment relative to its cost?
-Monetary ROI (£) - What is the net financial return (in monetary terms) on our investment after accounting for all costs and revenues?
+1. Total Engagement - What is the overall level of user interaction or engagement with our Ads across different metrics (likes, shares, and comments)?
+2. Conversion rate (%) - What percentage of ad viewers are converting into Paying customers?
+3. Cost per Acquisition - How much does it cost to acquire a single customer?
+4. Return on Ad-spend (ROAS) - How much revenue is generated for every dollar spent on advertising?
+5. Return on Investment (ROI) (%) - How much profit or loss is generated from our investment relative to its cost?
+6. Monetary ROI (£) - What is the net financial return (in monetary terms) on our investment after accounting for all costs and revenues?
 
 
 # Data Transformation/Preprocessing
@@ -64,31 +64,32 @@ With the data now transformed and modelled, it’s time to explore the data to a
 
 I approached the analysis by segmenting it into 3 Levels – Campaign, Channel and Ad performance, with filters, slicers and tooltips to enable interactivity and drill-down into other categories such as Cities, device, and Month. The metrics were then analyzed & summarized within 3 areas – Engagement, Revenue generated and Cost Analysis. To analyze Engagement performance of the campaign, the following DAX Measures were created:
 
-Total Ads = COUNTROWS('data') 
-Total Clicks = SUM('data'[Clicks])
-Average CTR = AVERAGE('data'[CTR, %])
-Total Impressions = SUM('data'[Impressions])
-Total Likes = SUM('data'[Likes (Reactions)])
-Total Shares = SUM('data'[Shares])
-Total Comments = SUM('data'[Comments])
+1. Total Ads = COUNTROWS('data') 
+2. Total Clicks = SUM('data'[Clicks])
+3. Average CTR = AVERAGE('data'[CTR, %])
+4. Total Impressions = SUM('data'[Impressions])
+5. Total Likes = SUM('data'[Likes (Reactions)])
+6. Total Shares = SUM('data'[Shares])
+7. Total Comments = SUM('data'[Comments])
+
 To analyze revenue and cost aspects of the campaign, the following DAX Measures were created-
 
 Cost Analysis measures:
+1. Total Ad Spend = SUM('data'[Spend, GBP])
+2. Average CPC = AVERAGE('data'[Daily Average CPC])
+3. Total Conversions = SUM('data'[Conversions])
+4. Conversion rate = DIVIDE([Total Conversions],[Total Clicks])
+5. Cost per Acquisition (CPA) = DIVIDE('_Metrics'[Total Ad Spend],'_Metrics'[Total Conversions])
 
-Total Ad Spend = SUM('data'[Spend, GBP])
-Average CPC = AVERAGE('data'[Daily Average CPC])
-Total Conversions = SUM('data'[Conversions])
-Conversion rate = DIVIDE([Total Conversions],[Total Clicks])
-Cost per Acquisition (CPA) = DIVIDE('_Metrics'[Total Ad Spend],'_Metrics'[Total Conversions])
 Revenue Analysis Measures:
-
-Total Conversion Value (£) = SUM('data'[Total conversion value, GBP])
+1. Total Conversion Value (£) = SUM('data'[Total conversion value, GBP])
 (Conversion Value ≈ Revenue)
-Return On Ad-spend = DIVIDE([Total Conversion Value (£)],[Total Ad Spend])
-Return-On-Investment (ROI) = 
+
+3. Return On Ad-spend = DIVIDE([Total Conversion Value (£)],[Total Ad Spend])
+
+4. Return-On-Investment (ROI) = 
 VAR TotalRevenue = SUM('data'[Total conversion value, GBP])
 VAR TotalSpend = SUM('data'[Spend, GBP])
-
 RETURN
 IF(
     TotalSpend <> 0,
@@ -96,7 +97,8 @@ IF(
     BLANK()
 )
 
-Monetary ROI = 
+
+5. Monetary ROI = 
     VAR _Profit = SUMX(
         'data', 
         [Total conversion value, GBP] - [Total Ad Spend]
