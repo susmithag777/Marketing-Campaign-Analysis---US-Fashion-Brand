@@ -25,16 +25,16 @@ A comprehensive Power BI report that:
 The following metrics were identified as essential Key Performance Indicators (KPIs) to provide the business user with insights into the effectiveness of each campaign, and Identify opportunities for optimization:
 
 Provided KPIs (Within the dataset)
-Impressions – Daily impressions (times ad was shown to a viewer) for each ad
-CTR (%) - Daily average click-through rate for each ad
-Clicks - Daily clicks for each ad
-Daily Average CPC - Daily average cost-per-click for each ad
-Spend, GBP - Total daily amount of advertising spending for each ad, in Great Britain Pounds(GBP)
-Conversions - Total daily purchases attributed to a specific ad
-Total Conversion Value, GBP - Total amount received from purchases attributed to a specific ad (Revenue)
-Likes - Total daily likes (or other reactions) per ad
-Shares - Total daily shares per ad (For the simplicities sake, each Pin on Pinterest was counted as a share)
-Comments - Total daily comments per ad
+Impressions – Daily impressions (times ad was shown to a viewer) for each ad <br>
+CTR (%) - Daily average click-through rate for each ad <br>
+Clicks - Daily clicks for each ad <br>
+Daily Average CPC - Daily average cost-per-click for each ad <br>
+Spend, GBP - Total daily amount of advertising spending for each ad, in Great Britain Pounds(GBP)<br>
+Conversions - Total daily purchases attributed to a specific ad<br>
+Total Conversion Value, GBP - Total amount received from purchases attributed to a specific ad (Revenue)<br>
+Likes - Total daily likes (or other reactions) per ad<br>
+Shares - Total daily shares per ad (For the simplicities sake, each Pin on Pinterest was counted as a share)<br>
+Comments - Total daily comments per ad <br>
 
 Additional(computed) KPIs.
 Total Engagement - What is the overall level of user interaction or engagement with our Ads across different metrics (likes, shares, and comments)?
