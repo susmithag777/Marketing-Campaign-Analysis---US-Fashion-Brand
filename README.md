@@ -116,3 +116,70 @@ IF(
     
 With the measures for the metrics computed, it’s time to bring our analysis to life with visuals.
 
+
+# KPI Visualization
+Our Fashion brand needed to increase its revenue while staying above the competition. We thought, in our current digital global village, what other way than a digital marketing campaign - 3 Seasons, Endless Style😉. Every weather season has an attire for it, and so we launched into the deep.
+
+However, we needed to carry out a test-run, before a larger global based campaign. Thus, during 3 different Seasons (Fall, Spring & Summer), we Launched 2 Advert types (Discounts & Latest collections) across 3 social media channels - Facebook, Instagram and Pinterest, with a focus on 3 cities- Birmingham, Manchester and London. We also made room to understand the devices used to access the Ads, to help our design team in digital Ad design & deployment.
+
+To begin, Let’s see how the campaigns performed on a general level.
+<img width="506" alt="image" src="https://github.com/user-attachments/assets/76a11786-9244-4202-b51b-cad40fa76ca7" />
+
+From the above visual, we see that a total of 9,900 Ads was launched (3,300 Ads per campaign season), resulting in 14.65 million impressions and over 180,000 clicks with an average Click-through rate (CTR) of 1.23%. Wow!😃 that was an impressive social reach. Nevertheless, having spent a total of £163.25K on the Ads we needed to see how the engagement translated to conversions, which is a driver for the revenue to be gotten.
+
+Analyzing further, we see that the over 180,000 clicks resulted in a little over 40,000 conversions, an indication that our conversion rate was about 22%.
+
+Now the question is, How much did we make from these conversions?
+
+The visual shows that we made 1.73 million pounds (£1.73M) with a Return on Ad-Spend (ROAS) of 10.61. That means the Overall campaign generated over £10 for every £1 spent on ads. Hmm 🙂, this was generally a profitable campaign outcome.
+
+However, it will be beneficial to dive deeper and see a more granular information on the performance by campaigns, Channels and Ads as well as our cities and our users’ devices.
+
+Moving to the Campaigns, we see from the image below that highest impression to conversion was recorded during Fall season. This high conversion is a likely reason for high revenue generated during the same season (September to November), as shown in our monthly trend analysis.
+
+<img width="520" alt="image" src="https://github.com/user-attachments/assets/9e970e59-9981-49c4-bee4-4f6000594405" />
+
+However, in terms of cost analysis, we see that despite having the highest Ad-spend and Cost per Acquisition, the fall season had the lowest Return on Ad-Spend (ROAS) across the campaign season.
+
+Thus, our analysis shows that, the most effective Campaign was in Summer (June to August), which was characterized by:
+
+lowest Ad-spend - Less expense on Ad campaigns
+low cost-per-acquisition (CPA), indicating that the brand is acquiring customers or conversions at a relatively low cost, and
+A High Return on Ad Spend (ROAS), which indicates that the revenue generated from those acquisitions is significantly higher than the cost.
+
+So, What are the opportunities from the campaign seasons outcomes?
+
+The Summer Campaign indicates an opportunity to scale. By scaling the ad spend, we can:- Reach more potential customers, Drive more conversions, and Increase revenue. With the low CPA , scaling the ad spend is likely to remain cost-effective, and the high ROAS indicates that the increased spend will likely lead to even moSo, Did the high engagement in London and among the mobile devices translate to conversions and revenue? 🤔 Let's find out.So, Did the high engagement in London and among the mobile devices translate to conversions and revenue? 🤔 Let's find out.re revenue growth.
+Conversely, the Fall Campaign presents an opportunity to optimize – It had the highest Ad-Spend and CPA, yet with the lowest ROAS.
+Similarly, The Spring Campaign also indicates an opportunity to optimize, given its moderate Ad-spend and good ROAS.
+
+Moving on, we look at our performance/opportunities across the 3 cities and based on device usage.
+<img width="344" alt="image" src="https://github.com/user-attachments/assets/39b0fe59-ad23-42be-a12d-5be37eafbb02" />
+
+
+From the visual above, we see that across the cities, the highest engagement was observed in London, with highest engagement coming from mobile device users. A similar trend was also seen in Manchester and Birmingham, with mobile Engagement consistently outpacing desktop.
+
+So, Did the high engagement in London and among the mobile devices translate to conversions and revenue? 🤔 Let's find out.
+<img width="499" alt="image" src="https://github.com/user-attachments/assets/644681de-6609-4ce9-a42b-dbad66de67fd" />
+
+From the visual above, Birmingham showed the highest clicks and conversion rate, suggesting it is highly effective at turning interest into purchases, While Manchester, despite lower engagement and click, generated the highest revenue, indicating effective campaigns. Across the devices, highest conversions and revenue came from our Desktop users, rather than Mobile. This was recorded across the channels and campaigns alike.
+
+What should be done?
+
+The highest engagement was observed in London → This indicates a strong interest that can be leveraged to drive more clicks and conversions by refining ad content with compelling calls to action.
+Birmingham showed the highest clicks and conversion rate, suggesting it is highly effective at turning interest into purchases.
+→ Allocating more budget to Birmingham could maximize conversions.
+Manchester, despite lower engagement and click, generated the highest revenue, indicating effective campaigns.
+→ Analyzing successful strategies in Manchester and replicating them in other locations could further enhance performance.
+For the Devices:
+
+Desktop ads outperformed mobile in terms of click-to-conversion rate and revenue. This suggests maintaining a strong focus on desktop-targeted campaigns, with high-quality, detailed ad content optimized for larger screens.
+
+Mobile performance can be improved by ensuring ads are mobile-optimized, with responsive design and faster load times. Introducing mobile-specific promotions and enhancing the mobile user experience could boost engagement and conversions, helping to capture a broader audience effectively.
+
+
+
+
+
+
+
